@@ -10,7 +10,7 @@ const Page = () => {
   const session = useSession();
   const searchParams = useSearchParams();
   const path = searchParams.get("redirect");
-
+ 
   const handleLogin = async (event) => {
     event.preventDefault();
     const email = event.target.email.value;
@@ -66,7 +66,7 @@ const Page = () => {
               <h6 className="my-12 text-center">or sign in with</h6>
               <SocialSignin />
               <h6 className="my-12 text-center">
-                not have account ?{" "}
+                not have account ?
                 <Link className="text-primary font-semibold" href={"/signup"}>
                   Sign Up
                 </Link>
